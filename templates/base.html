@@ -7,19 +7,20 @@
 </head>
 <body>
 <div id="header">
-    <span class="logo">Query Platform</span>
+    <span class="logo" style="display:inline-block;margin-right:60px;">Query Platform</span>
     {% if request.user.is_authenticated %}
-{#        <ul>#}
-{#            <li {% if section == "dashboard" %}class="selected"{% endif %}>#}
-        <a href="{% url "dashboard" %}">My dashboard</a>
-{#            </li>#}
-{#            <li {% if section == "images" %}class="selected"{% endif %}>#}
-        <a href="#">Images</a>
-{#            </li>#}
-{#            <li {% if section == "people" %}class="selected"{% endif %}>#}
-        <a href="#">People</a>
-{#            </li>#}
-{#        </ul>#}
+        {#        <ul>#}
+        {#            <li {% if section == "dashboard" %}class="selected"{% endif %}>#}
+        <a href="{% url "dashboard" %}" style="display:inline-block;margin-right:10px;">My dashboard</a>
+        {#            </li>#}
+        {#            <li {% if section == "images" %}class="selected"{% endif %}>#}
+        <a href="#" style="display:inline-block;margin-right:10px;">Images</a>
+        {#            </li>#}
+        {#            <li {% if section == "people" %}class="selected"{% endif %}>#}
+        <a href="#" style="display:inline-block;margin-right:10px;">People</a>
+        {#            </li>#}
+        {#        </ul>#}
+
     {% endif %}
     <span style="float: right;">
        {% if request.user.is_authenticated %}
